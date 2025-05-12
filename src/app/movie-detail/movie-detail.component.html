@@ -1,0 +1,27 @@
+<div *ngIf="movie; else loading">
+  <h2>{{ movie.Title }} ({{ movie.Year }})</h2>
+  <img [src]="movie.Poster" alt="Movie Poster" />
+
+  <p *ngIf="movie.Genre"><strong>Genre:</strong> {{ movie.Genre }}</p>
+  <p *ngIf="movie.Director"><strong>Director:</strong> {{ movie.Director }}</p>
+  <p *ngIf="movie.Actors"><strong>Actors:</strong> {{ movie.Actors }}</p>
+  <p *ngIf="movie.Plot"><strong>Plot:</strong> {{ movie.Plot }}</p>
+  <p *ngIf="movie.Runtime"><strong>Runtime:</strong> {{ movie.Runtime }}</p>
+
+  <div *ngIf="movie.Ratings?.length">
+    <h3>Ratings:</h3>
+    <ul>
+      <li *ngFor="let rating of movie.Ratings">
+        {{ rating.Source }}: {{ rating.Value }}
+      </li>
+    </ul>
+  </div>
+
+  <button (click)="addToFavorites()">Add to Favorites</button>
+  <!-- <button routerLink="/">Back to Search</button> -->
+   <button (click)="navigateBack()">Back to Search</button>
+</div>
+
+<ng-template #loading>
+  <p>Loading movie details...</p>
+</ng-template>

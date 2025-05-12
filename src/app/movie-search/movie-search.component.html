@@ -1,0 +1,12 @@
+<h2>Search Movies</h2>
+<input type="text" [(ngModel)]="query" placeholder="Enter movie name" />
+<button (click)="searchMovies()">Search</button>
+
+<ul>
+  <li *ngFor="let movie of movies">
+    <img [src]="movie.Poster" alt="Movie Poster" width="50">
+    <h3><a (click)="viewDetails(movie.imdbID)">{{ movie.Title }}</a></h3>
+    <p>Year: {{ movie.Year }}</p>
+    <button (click)="addToFavorites(movie)">Add to Favorites</button>
+  </li>
+</ul>
