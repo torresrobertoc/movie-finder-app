@@ -1,59 +1,66 @@
-# MovieFinderApp
+# Angular Movie Finder App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+## 🚀 Project Overview
 
-## Development server
+This Angular-based Movie Finder application demonstrates my skills in building scalable, modular, and maintainable Angular applications. The app allows users to search for movies using the OMDb API, view detailed information for each movie, and save favorites.
 
-To start a local development server, run:
+## ✅ Key Features
 
-```bash
-ng serve
-```
+* **Real-time Movie Search:** Utilizes the OMDb API for dynamic movie search results.
+* **Movie Details View:** Displays detailed movie information including title, year, poster, and plot.
+* **Favorites Management:** Users can save favorite movies for easy access.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Technologies Used
 
-## Code scaffolding
+* **Angular 19:** Standalone components, services, and modules.
+* **TypeScript:** Strongly typed code for better maintainability.
+* **OMDb API:** For movie data retrieval.
+* **Git & GitHub:** Version control and public repository.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📌 Project Structure
 
-```bash
-ng generate component component-name
-```
+* **src/app/components:** Contains Angular components (movie-search, movie-detail, favorites).
+* **src/app/services:** API service for interacting with the OMDb API.
+* **src/app/models:** TypeScript models for movie data.
+* **docs/browser:** Deployment directory for GitHub Pages.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 How to Run Locally
 
-```bash
-ng generate --help
-```
+1. Clone the repository:
 
-## Building
+   ```bash
+   git clone https://github.com/torresrobertoc/movie-finder-app.git
+   cd movie-finder-app
+   ```
+2. Install dependencies:
 
-To build the project run:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
 
-```bash
-ng build
-```
+   ```bash
+   ng serve
+   ```
+4. Open the app in your browser:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```
+   http://localhost:4200/
+   ```
 
-## Running unit tests
+## 📌 Skills Demonstrated
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+* Angular Component Design (Standalone Components)
+* API Integration with OMDb API
+* Modular Architecture with Services and Models
+* Git Version Control and GitHub Deployment
 
-```bash
-ng test
-```
+## 🔧 Possible Improvements
 
-## Running end-to-end tests
+* Add unit tests using Jasmine/Karma.
+* Improve error handling for API requests.
+* Add UI/UX enhancements (loading indicators, UI animations).
 
-For end-to-end (e2e) testing, run:
+## 📩 Contact
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feel free to contact me on LinkedIn for any questions or collaboration opportunities.
